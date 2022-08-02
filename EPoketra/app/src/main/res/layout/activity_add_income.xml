@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addIncome">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1A74D5"
+        android:id="@+id/head">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Income"
+            android:textColor="#fff"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+    </androidx.appcompat.widget.Toolbar>
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#d4d4d4"
+        android:layout_marginTop="20dp"
+        android:hint="Select Date..."
+        android:padding="15dp"
+        android:textColor="#897"
+        android:textColorHint="#090"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/head"/>
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:id="@+id/description"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp"
+        android:text="Description"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp"
+        android:id="@+id/desc"/>
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/desc"
+        android:id="@+id/nom"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp"
+        android:text="Nominal"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nom"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp"
+        android:id="@+id/nominal"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nominal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:background="#49A1E8"
+        android:text="Save"
+        android:id="@+id/save"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/save"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:background="#49A1E8"
+        android:text="Back"
+        android:id="@+id/back"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>

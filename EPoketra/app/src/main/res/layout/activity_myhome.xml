@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#07D5C1"
+        tools:context=".Myhome"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/month"
+            android:text=" Monthly expense"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#201E1E"
+            android:textStyle="bold"
+            android:layout_margin="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/verti"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/month"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/exp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/month"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:textColor="#201E1E"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/verti">
+            <TextView
+                android:id="@+id/inc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inc"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:textColor="#201E1E"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/grap"
+            android:layout_below="@id/verti"
+            android:src="@drawable/line_chart"
+            android:layout_marginTop="20dp"
+            android:paddingTop="50dp"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/grap"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="100dp"
+            android:columnCount="2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgInc"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="25dp"
+                    android:background="#BAEFE8"
+                    android:padding="30dp"
+                    android:src="@drawable/expence" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Add Income"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgExp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="25dp"
+                    android:background="#BAEFE8"
+                    android:padding="30dp"
+                    android:src="@drawable/income" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Add Expence"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imglist"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="25dp"
+                    android:background="#BAEFE8"
+                    android:padding="30dp"
+                    android:src="@drawable/listtransaction" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Detail Cash Flow"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgSet"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="25dp"
+                    android:background="#BAEFE8"
+                    android:padding="30dp"
+                    android:src="@drawable/setting" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Setting"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </GridLayout>
+
+    </RelativeLayout>
+</ScrollView>
